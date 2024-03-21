@@ -1,0 +1,377 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{932C01A8-8F8C-432E-8B0C-078665AAD751}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44331</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="AddAccess.aspx" />
+    <Content Include="Team.aspx" />
+    <Content Include="Admin.aspx" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\questrial-regular-webfont.svg" />
+    <Content Include="images\bg-content.jpg" />
+    <Content Include="images\bg-content2.png" />
+    <Content Include="images\bg-gray.png" />
+    <Content Include="images\dog2.jpg" />
+    <Content Include="images\dog3.jpg" />
+    <Content Include="images\dogs.jpg" />
+    <Content Include="images\icon.png" />
+    <Content Include="images\icons.png" />
+    <Content Include="images\images\icon-facebook-hover.png" />
+    <Content Include="images\images\icon-facebook.png" />
+    <Content Include="images\images\icon-googleplus-hover.png" />
+    <Content Include="images\images\icon-googleplus.png" />
+    <Content Include="images\images\icon-twitter-hover.png" />
+    <Content Include="images\images\icon-twitter.png" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\menu-selected.png" />
+    <Content Include="Login\css\main.css" />
+    <Content Include="Login\css\util.css" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="Login\fonts\Linearicons-Free-v1.0.0\icon-font.min.css" />
+    <Content Include="Login\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.svg" />
+    <Content Include="Login\fonts\montserrat\OFL.txt" />
+    <Content Include="Login\fonts\raleway\OFL.txt" />
+    <Content Include="Login\fonts\ubuntu\UFL.txt" />
+    <Content Include="Login\images\icons\favicon.ico" />
+    <Content Include="Login\images\icons\icon-google.png" />
+    <Content Include="Login\images\icons\map-marker.png" />
+    <Content Include="Login\images\icons\symbol-01.png" />
+    <Content Include="Login\index.html" />
+    <Content Include="Login\js\main.js" />
+    <Content Include="Login\Login.aspx" />
+    <Content Include="Login\vendor\animate\animate.css" />
+    <Content Include="Login\vendor\animsition\css\animsition.css" />
+    <Content Include="Login\vendor\animsition\css\animsition.min.css" />
+    <Content Include="Login\vendor\animsition\js\animsition.js" />
+    <Content Include="Login\vendor\animsition\js\animsition.min.js" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Login\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Login\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Login\vendor\bootstrap\js\popper.js" />
+    <Content Include="Login\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="Login\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="Login\vendor\countdowntime\countdowntime.js" />
+    <Content Include="Login\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="Login\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="Login\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="Login\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="Login\vendor\daterangepicker\moment.js" />
+    <Content Include="Login\vendor\daterangepicker\moment.min.js" />
+    <Content Include="Login\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="Login\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="Login\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="Login\vendor\select2\select2.css" />
+    <Content Include="Login\vendor\select2\select2.js" />
+    <Content Include="Login\vendor\select2\select2.min.css" />
+    <Content Include="Login\vendor\select2\select2.min.js" />
+    <Content Include="Report.aspx" />
+    <Content Include="Report_1.aspx" />
+    <Content Include="Volunteers.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Home.aspx" />
+    <Content Include="WebForm2.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddAccess.aspx.cs">
+      <DependentUpon>AddAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddAccess.aspx.designer.cs">
+      <DependentUpon>AddAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Team.aspx.cs">
+      <DependentUpon>Team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Team.aspx.designer.cs">
+      <DependentUpon>Team.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MyUser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report_1.aspx.cs">
+      <DependentUpon>Report_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report_1.aspx.designer.cs">
+      <DependentUpon>Report_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Volunteers.aspx.cs">
+      <DependentUpon>Volunteers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Volunteers.aspx.designer.cs">
+      <DependentUpon>Volunteers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\questrial-regular-webfont.eot" />
+    <Content Include="fonts\questrial-regular-webfont.ttf" />
+    <Content Include="fonts\questrial-regular-webfont.woff" />
+    <Content Include="images\images\icons.psd" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="Login\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.eot" />
+    <Content Include="Login\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.ttf" />
+    <Content Include="Login\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff" />
+    <Content Include="Login\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff2" />
+    <Content Include="Login\fonts\montserrat\Montserrat-Black.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-BlackItalic.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-Bold.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-BoldItalic.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-ExtraBold.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-ExtraLight.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-Italic.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-Light.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-LightItalic.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-Medium.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-MediumItalic.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-Regular.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-SemiBold.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-Thin.ttf" />
+    <Content Include="Login\fonts\montserrat\Montserrat-ThinItalic.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="Login\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-Black.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-BlackItalic.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-Bold.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-BoldItalic.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-ExtraBold.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-ExtraBoldItalic.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-ExtraLight.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-ExtraLightItalic.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-Italic.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-Light.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-LightItalic.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-Medium.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-MediumItalic.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-Regular.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-SemiBold.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-SemiBoldItalic.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-Thin.ttf" />
+    <Content Include="Login\fonts\raleway\Raleway-ThinItalic.ttf" />
+    <Content Include="Login\fonts\ubuntu\Ubuntu-Bold.ttf" />
+    <Content Include="Login\fonts\ubuntu\Ubuntu-BoldItalic.ttf" />
+    <Content Include="Login\fonts\ubuntu\Ubuntu-Italic.ttf" />
+    <Content Include="Login\fonts\ubuntu\Ubuntu-Light.ttf" />
+    <Content Include="Login\fonts\ubuntu\Ubuntu-LightItalic.ttf" />
+    <Content Include="Login\fonts\ubuntu\Ubuntu-Medium.ttf" />
+    <Content Include="Login\fonts\ubuntu\Ubuntu-MediumItalic.ttf" />
+    <Content Include="Login\fonts\ubuntu\Ubuntu-Regular.ttf" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58136</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44331/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
